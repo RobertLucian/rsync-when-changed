@@ -6,7 +6,7 @@ Script to rsync to a remote server the local files. Specifically built for my Ma
 
 Make sure `when-changed` is installed.
 ```bash
-pip install git+https://github.com/joh/when-changed/tree/21812a67ee5bc4b56970843b86cedd4f8a733695.git
+pip install git+https://github.com/joh/when-changed.git@21812a67ee5bc4b56970843b86cedd4f8a733695
 ```
 
 ## Script Install
