@@ -1,6 +1,13 @@
 # rsync-when-changed:
 
-Script to rsync to a remote server the local files. Specifically built for my Mac OS machine which runs on >= Catalina.
+Script to rsync the local files to a remote server. Specifically built for my Mac OS machine which runs on >= Catalina.
+
+## Usage
+
+```bash
+$ remote_sync dest_dir
+```
+`dest_dir` - full path of the directory on the remote server where the files are saved to
 
 ## Dependencies
 
