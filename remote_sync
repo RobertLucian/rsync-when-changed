@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [ -z "$AWS_KEY"] || [ -z "$EC2_INSTANCE" ];
+    echo "AWS_KEY or EC2_INSTANCE variables are empty"
+    exit 1
+fi
+
+if [ -z "$0" ];
+    echo "No positional argument provided. Path expected."
+    exit 1
+fi
+
+when-changed -vr1s ./ -c rsync -Pav -e "ssh -i $AWS_KEY" ./ "$EC2_INSTANCW":"$0"
