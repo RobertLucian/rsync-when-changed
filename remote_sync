@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -z "$AWS_KEY"] || [ -z "$EC2_INSTANCE" ];
+if [ -z "$AWS_KEY"] || [ -z "$EC2_INSTANCE" ]; then
     echo "AWS_KEY or EC2_INSTANCE variables are empty"
     exit 1
 fi
 
-if [ -z "$0" ];
+if [ -z "$0" ]; then
     echo "No positional argument provided. Path expected."
     exit 1
 fi

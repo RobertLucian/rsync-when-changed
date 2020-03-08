@@ -15,7 +15,7 @@ Installing it for Mac OS (>= Catalina)
 
 ```bash
 mkdir -p $HOME/.rsynchanged/bin
-echo "export PATH=$PATH:$HOME/.rsynchanged/bin" >> ~/.zprofile
+echo "export PATH=\$PATH:$HOME/.rsynchanged/bin" >> ~/.zprofile
 curl https://raw.githubusercontent.com/robertlucian/rsync-when-changed/master/remote_sync -o $HOME/.rsynchanged/bin/remote_sync
 chmod +x $HOME/.rsynchanged/bin/remote_sync
 ```
