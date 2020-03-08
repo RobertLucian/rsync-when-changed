@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ -z "$AWS_KEY"] || [ -z "$EC2_INSTANCE" ]; then
-    echo "AWS_KEY or EC2_INSTANCE variables are empty"
+if [ -z "$INSTANCE_KEY"] || [ -z "$INSTANCE_ADDRESS" ]; then
+    echo "INSTANCE_KEY or INSTANCE_ADDRESS variables are empty"
     exit 1
 fi
 
@@ -10,4 +10,4 @@ if [ -z "$0" ]; then
     exit 1
 fi
 
-when-changed -vr1s ./ -c rsync -Pav -e "ssh -i $AWS_KEY" ./ "$EC2_INSTANCW":"$0"
+when-changed -vr1s ./ -c rsync -Pav -e "ssh -i $INSTANCE_KEY" ./ "$INSTANCE_ADDRESS":"$0"
