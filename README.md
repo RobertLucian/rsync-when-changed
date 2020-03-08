@@ -30,6 +30,6 @@ source ~/.zprofile
 
 `INSTANCE_KEY` and `INSTANCE_ADDRESS` must both be set.
 * `INSTANCE_KEY` - contains the path to the private key used for logging into the instance. 
-* `INSTANCE_ADDRESS` - user and public DNS name of the instance. Has `user@public_dns_name` format.
+* `INSTANCE_ADDRESS` - user and public DNS name of the instance. Has `[user@]public_dns_name` format.
 
 Both of these variables should be exported in `~/.zprofile`.
