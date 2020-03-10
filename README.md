@@ -11,9 +11,9 @@ $ remote_sync dest_dir
 
 ## Dependencies
 
-Make sure `when-changed` is installed.
+Make sure `watchdog` is installed.
 ```bash
-pip install git+https://github.com/joh/when-changed.git@21812a67ee5bc4b56970843b86cedd4f8a733695
+pip install watchdog==0.10.2 argh==0.26.2
 ```
 
 ## Script Install

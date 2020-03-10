@@ -10,4 +10,4 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-when-changed -vr1s ./ -c rsync -Pav -e "ssh -i $INSTANCE_KEY" ./ "$INSTANCE_ADDRESS":"$1"
+watchmedo shell-command --recursive --command='rsync -Pav -e "ssh -i $INSTANCE_KEY" ./ "$INSTANCE_ADDRESS":"$1"' .
